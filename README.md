@@ -15,7 +15,7 @@ music_player/
 
 ## Database Tables
 
-| Table            | Kaam                              |
+| Table            | Working                           |
 |------------------|-----------------------------------|
 | `artists`        | Singer/band info                    |
 | `albums`         | Albums and covers                   |

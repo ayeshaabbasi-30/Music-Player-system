@@ -1,4 +1,4 @@
-# 🎵 SurTaal – Music Player Database Project
+# 🎵 Spotify – Music Player Database Project
 
 ## Project Structure
 
@@ -6,9 +6,9 @@
 music_player/
 ├── app.py              ← Flask Backend (Python)
 ├── index.html          ← Frontend (HTML/CSS/JS)
-├── schema.sql          ← MySQL ke liye SQL schema
+├── schema.sql          ← MySQL  schema
 ├── requirements.txt    ← Python packages
-└── music_player.db     ← SQLite database (auto-banegi)
+└── music_player.db     ← SQLite database 
 ```
 
 ---
@@ -70,37 +70,37 @@ http://localhost:5000
 ## API Endpoints
 
 ### Songs
-- `GET  /api/songs`              – Sab songs
-- `POST /api/songs`              – Nayi song add karein
-- `PUT  /api/songs/<id>`         – Song update karein
-- `DELETE /api/songs/<id>`       – Song delete karein
+- `GET  /api/songs`              – All songs
+- `POST /api/songs`              – Add new song 
+- `PUT  /api/songs/<id>`         – update song
+- `DELETE /api/songs/<id>`       – Song delete
 - `POST /api/songs/<id>/play`    – Play count +1
 - `GET  /api/search?q=...`       – Search
 
 ### Artists
-- `GET  /api/artists`            – Sab artists
-- `POST /api/artists`            – Nayi artist
+- `GET  /api/artists`            – All artists
+- `POST /api/artists`            – New artist
 - `DELETE /api/artists/<id>`     – Artist delete
-- `GET  /api/artists/<id>/songs` – Artist ki songs
+- `GET  /api/artists/<id>/songs` – Artist songs
 
 ### Albums
-- `GET  /api/albums`             – Sab albums
-- `POST /api/albums`             – Nayi album
+- `GET  /api/albums`             – All albums
+- `POST /api/albums`             – New album
 - `DELETE /api/albums/<id>`      – Album delete
-- `GET  /api/albums/<id>/songs`  – Album ki songs
+- `GET  /api/albums/<id>/songs`  – Album songs
 
 ### Playlists
-- `GET  /api/playlists`          – Sab playlists
-- `POST /api/playlists`          – Nayi playlist
+- `GET  /api/playlists`          – All playlists
+- `POST /api/playlists`          – New playlist
 - `DELETE /api/playlists/<id>`   – Playlist delete
-- `GET  /api/playlists/<id>/songs`    – Playlist ki songs
-- `POST /api/playlists/<id>/songs`    – Song add karein
+- `GET  /api/playlists/<id>/songs`    – Playlist songs
+- `POST /api/playlists/<id>/songs`    – Song add 
 - `DELETE /api/playlists/<id>/songs/<song_id>` – Song remove
 
 ### Favorites
-- `GET  /api/favorites`          – Sab favorites
+- `GET  /api/favorites`          – All favorites
 - `POST /api/favorites/<id>`     – Toggle favorite
-- `GET  /api/favorites/check/<id>` – Check karo favorite hai ya nahi
+- `GET  /api/favorites/check/<id>` – Check favorite
 
 ### Stats
 - `GET  /api/stats`              – Dashboard statistics
